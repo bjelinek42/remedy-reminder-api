@@ -8,3 +8,12 @@ Content-Type: application/json
   "password": "password",
   "birthdate": "1987-12-18"
 }
+
+###
+POST http://localhost:3000/sessions.json
+Content-Type: application/json
+
+{
+  "email": "ben@gmail.com",
+  "password": "password"
+}
