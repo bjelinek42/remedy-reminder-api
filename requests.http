@@ -17,3 +17,6 @@ Content-Type: application/json
   "email": "ben@gmail.com",
   "password": "password"
 }
+
+###
+GET http://localhost:3000/users/2/remedies/
