@@ -27,3 +27,18 @@ Authorization: Bearer {{jwt}}
 ###
 GET http://localhost:3000/users/2/remedies/2.json
 Authorization: Bearer {{jwt}}
+
+###
+POST http://localhost:3000/users/2/remedies.json
+Authorization: Bearer {{jwt}}
+Content-Type: application/json
+
+{
+  "name": "Vitamin D",
+  "start_date": 20220719,
+  "dosage": "1000 IU",
+  "special_instructions": "none",
+  "schedule_id": 5,
+  "end_date": "none",
+  "kind": "supplement"
+}

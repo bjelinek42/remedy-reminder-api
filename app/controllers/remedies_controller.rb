@@ -13,4 +13,19 @@ class RemediesController < ApplicationController
     render json: remedy
   end
 
+  def create
+    remedy = Remedy.new(
+      user_id: current_user.id,
+      name: params[:name],
+      start_date: params[:start_date],
+      dosage: params[:dosage],
+      special_instructions: params[:special_instructions],
+      schedule_id: params[:schedule_id],
+      end_date: params[:end_date],
+      kind: params[:kind]
+    )
+    remedy.save
+    render json: remedy
+  end
+
 end
