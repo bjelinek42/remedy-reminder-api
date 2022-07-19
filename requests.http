@@ -1,3 +1,5 @@
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTgzNDQ4NTV9.wJ6gfB_BwrZ96C1gPhmtdq8ABAw8gNNQG2Ln48yFOto
+
 POST http://localhost:3000/users
 Content-Type: application/json
 
@@ -19,4 +21,5 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:3000/users/2/remedies/
+GET http://localhost:3000/users/2/remedies.json
+Authorization: Bearer {{jwt}}
