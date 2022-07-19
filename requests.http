@@ -23,3 +23,7 @@ Content-Type: application/json
 ###
 GET http://localhost:3000/users/2/remedies.json
 Authorization: Bearer {{jwt}}
+
+###
+GET http://localhost:3000/users/2/remedies/2.json
+Authorization: Bearer {{jwt}}

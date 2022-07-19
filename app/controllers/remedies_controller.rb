@@ -9,6 +9,8 @@ class RemediesController < ApplicationController
   end
 
   def show
+    remedy = Remedy.find_by(id: params[:id])
+    render json: remedy
   end
 
 end
