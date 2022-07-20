@@ -43,4 +43,10 @@ class RemediesController < ApplicationController
     render json: remedy
   end
 
+  def destroy
+    remedy = Remedy.find_by(id: params[:id])
+    remedy.destroy
+    render json: "Remedy Destroyed."
+  end
+
 end

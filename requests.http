@@ -56,3 +56,6 @@ Content-Type: application/json
   "end_date": "none",
   "kind": "supplement"
 }
+
+###
+DELETE http://localhost:3000/users/2/remedies/6.json
