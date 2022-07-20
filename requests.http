@@ -42,3 +42,17 @@ Content-Type: application/json
   "end_date": "none",
   "kind": "supplement"
 }
+
+###
+PATCH http://localhost:3000/users/2/remedies/6.json
+Authorization: Bearer {{jwt}}
+Content-Type: application/json
+
+{
+  "name": "Vitamin D",
+  "dosage": "1200 IU",
+  "special_instructions": "none",
+  "schedule_id": 5,
+  "end_date": "none",
+  "kind": "supplement"
+}

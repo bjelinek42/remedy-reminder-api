@@ -28,4 +28,19 @@ class RemediesController < ApplicationController
     render json: remedy
   end
 
+  def edit
+  end
+
+  def update
+    remedy = Remedy.find_by(id: params[:id])
+    remedy.name = params[:name]
+    remedy.dosage = params[:dosage]
+    remedy.special_instructions = params[:special_instructions]
+    remedy.schedule_id = params[:schedule_id]
+    remedy.end_date = params[:end_date]
+    remedy.kind = params[:kind]
+    remedy.save
+    render json: remedy
+  end
+
 end
