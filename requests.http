@@ -59,3 +59,6 @@ Content-Type: application/json
 
 ###
 DELETE http://localhost:3000/users/2/remedies/6.json
+
+###
+GEt http://localhost:3000/users/2/remedies/1/schedules.json

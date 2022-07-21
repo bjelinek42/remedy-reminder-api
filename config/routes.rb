@@ -5,7 +5,9 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   resources :users, only: [:create] do
-    resources :remedies
+    resources :remedies do
+      resources :schedules, only: [:create, :index]
+    end
   end
 
   resources :sessions, only: [:create]
